@@ -1,0 +1,19 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'io.github.gradlebom.generator-plugin' version '1.0.0.Final'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+kotlin {
+    jvmToolchain(8)
+}
+
+dependencies {
+    implementation(project(":api"))
+    implementation(project(":module-a"))
+}
