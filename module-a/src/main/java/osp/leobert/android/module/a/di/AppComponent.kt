@@ -7,6 +7,5 @@ import javax.inject.Singleton
 @Singleton
 @MergeComponent(AppScope::class)
 interface AppComponent {
-    //    @Provides
     fun provideFactory(): ModuleADemoApiImpl4.Factory
 }
